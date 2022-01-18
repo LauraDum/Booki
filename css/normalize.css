@@ -1,8 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-
-/* police de texte apliqué sur tout le document + animationn scroll */
-* {
-  font-family: "Ubuntu", sans-serif;
-  margin: 20px;
-  scroll-behavior: smooth;
-}
