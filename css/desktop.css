@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER---------------------------------------------- */
+
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+main h1 {
+    font-size: 150%;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 120%;
+    
+}
+
+
+/* HEADER ET NAV ------------------------------------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+header #logo {
+    padding: 25px 0px;
+}
+
+header #logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+    border-color: var(--blue);
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color: var(--blue);
+}
+
+
+/* SEARCH ------------------------------------------------------------ */
+
+h1 {
+    margin-bottom: 0px
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    height: 40px;
+  }
+  
+  .search-box .fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 12px;
+    margin-right: -20px;
+    border-radius: 15px 0px 0px 15px;
+    align-self: center;
+  }
+  
+  .search-box input {
+    margin-right: -20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border: 1px solid #f2f2f2;
+  }
+  
+  .search-box button {
+    padding: 10px;
+    border: none;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0px 15px 15px 0px;
+  }
+
+/* FILTER---------------------------------------------------------------- */
+
+#filter {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#filter .filtre-box {
+    margin: 0px 10px;
+    border-radius: 30px;
+    border: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#filter .filtre-box i {
+    background-color: var(--light-blue);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter .filtre-box .text {
+    padding: 0px 10px;
+}
+
+
+/* INFO-------------------------------------------------------------------- */
+
+.info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.info .fas.fa-info {
+    color: var(--blue);
+    border: 1px solid var(--grey);
+    border-radius: 100%;
+    width: 25px;
+    height: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* HEBERGEMENTS---------------------------------------------------------------- */
+
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#hebergement section h2 {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+#hebergement section .container {
+    background-color: var(--grey);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(85% - -100px);
+    box-sizing: content-box;
+}
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+    box-shadow: 2px 1px 5px rgb(189, 189, 189);
+}
+
+.hebergement-list a article .fa-star.blue {
+    color: var(--blue);
+}
+
+.hebergement-list a article .fa-star.grey {
+    color: var(--grey);
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
+}
+
+.hebergement-list a article .article-content .price.bold {
+    font-weight: bold;
+}
+
+
+/* HERBERGEMENTS */
+
+#hebergement .marseille {
+    width: 60%;
+}
+
+#hebergement .marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+/* LES PLUS POPULAIRES----------------------------------------- */
+
+#hebergement .populaire .chart-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#hebergement .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+#hebergement .populaire .hebergement-list a {
+    width: 100%;
+}
+
+#hebergement .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+#hebergement .populaire .hebergement-list a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+}
+
+#hebergement .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#hebergement .populaire .hebergement-list article .article-content .star-rate {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#hebergement span {
+    font-weight: bold;
+}
+
+#hebergement .populaire .container i {
+    padding-top: 20px;
+}
+
+/* ACTIVITES------------------------------------------------------------------- */
+
+#activite {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.activite-list {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.activite-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activite-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+    box-shadow: 2px 1px 5px rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+.activite-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .column.double article {
+    height: 48%;
+}
+
+
+/* FOOTER----------------------------------------------------------------- */
+
+footer {
+    background-color: var(--grey);
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
+}
+
+footer .column {
+    width: 30%;
+}
+
+footer .column ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .column ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+.informations__github {
+    height: 24px;
+}
