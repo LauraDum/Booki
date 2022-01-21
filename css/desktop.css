@@ -156,6 +156,10 @@ h1 {
     padding: 0px 10px;
 }
 
+#filter .filtre-box:hover {
+  transition: background-color 0.2s;
+  background-color: var(--light-blue);
+} 
 
 /* INFO-------------------------------------------------------------------- */
 
